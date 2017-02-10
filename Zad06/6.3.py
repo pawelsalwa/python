@@ -15,12 +15,12 @@ class Rectangle:
 		return "Rectangle("+repr(self.pt1.x)+", "+repr(self.pt1.y) +", " + repr(self.pt2.x)+", "+repr(self.pt2.y)+ ')'
 #================================================================================
 	def __eq__(self, other): # obsluga rect1 == rect2
-		if self.pt1.x == other.pt1.x and self.pt2.y == other.pt2.y:
+		if self.pt1.x == other.pt1.x and self.pt1.y == other.pt1.y and self.pt2.x == other.pt2.x and self.pt2.y == other.pt2.y :
 			return True
 		else:
 			return False
 	def __ne__(self, other): # obsluga rect1 != rect2
-		if self.pt1.x != other.pt1.x or self.pt2.y != other.pt2.y:
+		if self.pt1.x != other.pt1.x or self.pt1.y != other.pt1.y or self.pt2.x != other.pt2.x or self.pt2.y != other.pt2.y :
 			return True
 		else:
 			return False
