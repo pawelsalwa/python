@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Python- program zaliczeniowy
+Python- program zaliczeniowy - klasa GameState przechowujaca informacje o grze
 
 @author: salwus
 """
